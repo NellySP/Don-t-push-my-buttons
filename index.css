@@ -1,47 +1,43 @@
 :root {
-    --color-1: yellow; 
-    --color-2: red;
-    --color-3: green;
+  --color-1: yellow;
+  --color-2: red;
+  --color-3: green;
 }
 
-
 * {
-    box-sizing: border-box;
-    margin: 0%;
+  box-sizing: border-box;
+  margin: 0%;
 }
 
 body {
-    
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .buttonContainer {
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 button {
-    display:block;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    border-color: black;
-    margin: 10px;
-    font-size: 18px;
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border-color: black;
+  margin: 10px;
+  font-size: 18px;
 }
 
 .push {
-    background-color: var(--color-1);
-   }
+  background-color: var(--color-1);
+}
 .touch {
-    background-color: var(--color-2);
+  background-color: var(--color-2);
 }
 .even {
-    background-color: var(--color-3);
+  background-color: var(--color-3);
 }
