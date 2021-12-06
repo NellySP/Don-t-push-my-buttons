@@ -48,10 +48,14 @@ const objections = [
 
 // function to trigger alert on 5 clicks. work in to something that works
 
-$(document).ready(function () {
-  let count = 0;
-  $('dont').click(function () {
-    count += 1;
-    if (count == 5) alert('ALERT!');
-  });
+// $(document).ready(function () {
+//   let count = 0;
+//   $('dont').click(function () {
+//     count += 1;
+//     if (count == 5) alert('ALERT!');
+//   });
+// });
+
+window.addEventListener('scroll', (event) => {
+  alert('Scrolling...');
 });
