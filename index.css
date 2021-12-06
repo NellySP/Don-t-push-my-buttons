@@ -14,6 +14,7 @@ body {
   align-content: center;
   display: flex;
   flex-wrap: wrap;
+  background-color: rgb(199, 171, 171);
 }
 
 .buttonContainer {
@@ -38,6 +39,6 @@ button {
 .touch {
   background-color: var(--color-2);
 }
-.even {
+.nix {
   background-color: var(--color-3);
 }
