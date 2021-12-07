@@ -1,7 +1,7 @@
 :root {
-  --color-1: rgb(253, 224, 92);
-  --color-2: rgb(170, 127, 127);
-  --color-3: rgb(122, 192, 122);
+  --color-1: #9a8c98;
+  --color-2: #c9ada7;
+  --color-3: #f2e9e4;
 }
 
 * {
@@ -14,7 +14,7 @@ body {
   align-content: center;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(199, 171, 171);
+  background-color: #4a4e69;
 }
 
 @font-face {
@@ -22,4 +22,8 @@ body {
   src: url("/fonts/disgusting_behavior/DisgustingBehavior-AZrA.woff");
   font-family: "Road rage";
   src: url("/fonts/Road_Rage/roadRage-Regular.woff");
+  font-family: "Average";
+  src: url("/fonts/Average/Average-Regular.woff");
+  font-family: "go crazy";
+  src: url("/fonts/go-crazy-font/GoCrazy-Yqw2.woff");
 }

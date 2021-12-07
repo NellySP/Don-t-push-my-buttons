@@ -1,61 +1,87 @@
-// Function to move the buttons around
-
-function moveElmRand(elm) {
-  elm.style.position = 'absolute';
-  elm.style.top = Math.floor(Math.random() * 90 + 5) + '%';
-  elm.style.left = Math.floor(Math.random() * 90 + 5) + '%';
-}
-
-// Event listeners for the buttons
-const btn_push = document.querySelector('#bouncing');
-btn_push.addEventListener('click', function (e) {
-  moveElmRand(e.target);
-  const objection = objections[Math.floor(Math.random() * objections.length)];
-  window.alert(objection);
-});
-
-const btn_touch = document.querySelector('#run');
-btn_touch.addEventListener('mouseover', function (e) {
-  moveElmRand(e.target);
-  const objection = objections[Math.floor(Math.random() * objections.length)];
-  window.alert(objection);
-});
-
-const warning = document.getElementById('dont');
-warning.addEventListener('click', () => {
-  const objection = objections[Math.floor(Math.random() * objections.length)];
-  window.alert(objection);
-});
-
 // Array of objections
 
 const objections = [
-  'I said dont',
-  'Cut it out ...',
-  'Seriously??',
-  'Thats so immature',
-  'DONT!',
-  'STOP IT',
-  'Youre getting on my nerve',
-  'Im warning you!',
-  'Get your own damn buttons!',
-  'I mean it, dont do it!',
-  'Dont force me to call the police',
-  'This is a crime. Ill get you put in prison.',
-  'Go push your own buttons',
-  'You can go push your mom or something',
+  "i said don't",
+  "cut it out ...",
+  "seriously??",
+  "that's so immature",
+  "dONT!",
+  "sTOP IT 😡",
+  "your'e getting on my nerves",
+  "i'm warning you!",
+  "get your own damn buttons!",
+  "i mean it, don't do it!",
+  "Don't force me to call the police",
+  "this is a crime. I'll get you put in prison.",
+  "go push your own buttons",
+  "you can go push your mom or something...",
+  "would you please stop?!",
+  "this is ridiculus",
+  "don't even think about it",
+  "stop treating me like this",
+  "some people just don't have any respect for others...",
+  "why won't you stop? 😭",
+  "🤬",
+  "i am politely asking you to stop",
+  "Would you stop that?",
+  "stop being an asshat 🤠 ",
+  "Have you ever tried to stop? 🙃",
+  "you better stop",
+  "okay, you can keep pushing 😘",
+  "this is honestly so rude, I can't understand why you would do this to me. Are you a bad person? You must be. At least you clearly have no concept of bounderies. The disrespect.  ",
 ];
 
-// function to trigger alert on 5 clicks. work in to something that works
+// Format the objections to make the first letter uppercase.
 
-// $(document).ready(function () {
-//   let count = 0;
-//   $('dont').click(function () {
-//     count += 1;
-//     if (count == 5) alert('ALERT!');
-//   });
-// });
+const formattedObjection = objections.map((item) => {
+  return item.toUpperCase();
+});
 
-window.addEventListener('scroll', (event) => {
-  alert('Scrolling...');
+// Variable to keep count of the interactions with the buttons
+
+let count = 0;
+
+// function to randomize out an objection, trigger a window alert
+// and to reset the counter to 0.
+
+function protest() {
+  if (count === 4) {
+    const objection =
+      formattedObjection[Math.floor(Math.random() * objections.length)];
+    window.alert(objection);
+    count = 0;
+  }
+}
+// Function to move the buttons around
+
+function moveElmRand(elm) {
+  elm.style.position = "absolute";
+  elm.style.top = Math.floor(Math.random() * 90 + 5) + "%";
+  elm.style.left = Math.floor(Math.random() * 90 + 5) + "%";
+  count++;
+}
+
+// Event listener scroll, trigger at window alert.
+
+window.addEventListener("scroll", (event) => {
+  alert("Yeah, you better scroll away...");
+});
+
+// Event listeners for the buttons
+const btn_push = document.querySelector("#bouncing");
+btn_push.addEventListener("click", function (e) {
+  moveElmRand(e.target);
+  protest();
+});
+
+const btn_touch = document.querySelector("#run");
+btn_touch.addEventListener("mouseover", function (e) {
+  moveElmRand(e.target);
+  protest();
+});
+
+const warning = document.getElementById("dont");
+warning.addEventListener("click", (e) => {
+  moveElmRand(e.target);
+  protest();
 });

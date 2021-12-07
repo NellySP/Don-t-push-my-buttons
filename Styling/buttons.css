@@ -2,6 +2,9 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 button {
@@ -9,10 +12,11 @@ button {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  border-color: black;
+  border-color: #22223b;
   margin: 10px;
-  font-size: 18px;
-  font-family: "Road Rage";
+  font-size: 24px;
+  font-family: "Go crazy";
+  cursor: not-allowed;
 }
 
 .push {
@@ -20,7 +24,14 @@ button {
 }
 .touch {
   background-color: var(--color-2);
+  display: none;
 }
 .nix {
   background-color: var(--color-3);
+}
+
+@media screen and (min-width: 400px) {
+  .touch {
+    display: block;
+  }
 }
