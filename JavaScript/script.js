@@ -28,7 +28,8 @@ const objections = [
   "Have you ever tried to stop? 🙃",
   "you better stop",
   "okay, you can keep pushing 😘",
-  "this is honestly so rude, I can't understand why you would do this to me. Are you a bad person? You must be. At least you clearly have no concept of bounderies. The disrespect.  ",
+  "this is honestly so rude, I can't understand why you would do this to me. Are you a bad person? You must be. At least you clearly have no concept of bounderies. The disrespect.",
+  "this is getting old",
 ];
 
 // Format the objections to make the first letter uppercase.
