@@ -18,12 +18,12 @@ body {
 }
 
 @font-face {
-  font-family: "Disgusting Behavior";
-  src: url("/fonts/disgusting_behavior/DisgustingBehavior-AZrA.woff");
-  font-family: "Road rage";
-  src: url("/fonts/Road_Rage/roadRage-Regular.woff");
-  font-family: "Average";
-  src: url("/fonts/Average/Average-Regular.woff");
-  font-family: "go crazy";
-  src: url("/fonts/go-crazy-font/GoCrazy-Yqw2.woff");
+  font-family: 'Disgusting Behavior';
+  src: url('/fonts/disgusting_behavior/DisgustingBehavior-AZrA.woff');
+  font-family: 'Road rage';
+  src: url('/fonts/Road_Rage/roadRage-Regular.woff');
+  font-family: 'Average';
+  src: url('/fonts/Average/Average-Regular.woff');
+  font-family: 'go crazy';
+  src: url('/fonts/go-crazy-font/GoCrazy-Yqw2.woff');
 }
