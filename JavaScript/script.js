@@ -7,7 +7,7 @@ const objections = [
   "that's so immature",
   'dONT!',
   'sTOP IT 😡',
-  "your'e getting on my nerves",
+  "you're getting on my nerves",
   "i'm warning you!",
   'get your own damn buttons!',
   "i mean it, don't do it!",
@@ -45,7 +45,7 @@ let count = 0;
 // and to reset the counter to 0.
 
 function protest() {
-  if (count === 4) {
+  if (count === 6) {
     const objection =
       formattedObjection[Math.floor(Math.random() * objections.length)];
     window.alert(objection);
