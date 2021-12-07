@@ -18,7 +18,6 @@ const objections = [
   'would you please stop?!',
   'this is ridiculus',
   "don't even think about it",
-  'stop treating me like this',
   "some people just don't have any respect for others...",
   "why won't you stop? 😭",
   '🤬',
@@ -35,7 +34,7 @@ const objections = [
 // Format the objections to make the first letter uppercase.
 
 const formattedObjection = objections.map((item) => {
-  return item.toUpperCase();
+  return item.charAt(0).toUpperCase() + item.substr(1);
 });
 
 // Variable to keep count of the interactions with the buttons
