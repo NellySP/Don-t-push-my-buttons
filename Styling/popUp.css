@@ -14,18 +14,19 @@
 
 /* Modal Content/Box */
 .popup-content {
-  background-color: #fefefe;
+  background-color: var(--color-3);
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 40%; /* Could be more or less, depending on screen size */
   height: 15%;
   text-align: center;
+  font-family: 'Go crazy';
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #4a4e69;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -33,11 +34,18 @@
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #7077a1;
   text-decoration: none;
   cursor: pointer;
 }
 
 #open-button {
   justify-self: flex-start;
+}
+
+@media screen and (min-width: 400px) {
+  .popup-content {
+    width: 50%;
+    height: 30%;
+  }
 }
