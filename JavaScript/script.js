@@ -20,7 +20,7 @@ const objections = [
   "don't even think about it",
   "some people just don't have any respect for others...",
   "why won't you stop? 😭",
-  '🤬',
+  '🤬🤬🤬🤬🤬',
   'i am politely asking you to stop',
   'Would you stop that?',
   'stop being an asshat 🤠 ',
