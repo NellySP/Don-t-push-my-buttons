@@ -48,7 +48,9 @@ function protest() {
   if (count === 6) {
     const objection =
       formattedObjection[Math.floor(Math.random() * objections.length)];
-    window.alert(objection);
+    popup.style.display = 'block';
+    let popupText = (document.getElementById('popup-text').innerHTML =
+      objection);
     count = 0;
   }
 }
@@ -84,4 +86,27 @@ const warning = document.getElementById('dont');
 warning.addEventListener('click', (e) => {
   moveElmRand(e.target);
   protest();
+});
+
+// Get the popup
+const popup = document.getElementById('myPopup');
+
+// Get the button that opens the modal (replace with function)
+const openBtn = document.getElementById('openBtn');
+
+// Get the <span> element that closes the popup
+const closeButton = document.getElementsByClassName('close')[0];
+
+// When the user clicks on <span> (x), close the popup
+
+closeButton.addEventListener('click', function (e) {
+  popup.style.display = 'none';
+});
+
+// When the user clicks anywhere outside of the modal, close it
+
+window.addEventListener('click', function (e) {
+  if (e.target == popup) {
+    popup.style.display = 'none';
+  }
 });
