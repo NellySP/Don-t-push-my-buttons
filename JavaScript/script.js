@@ -2,7 +2,7 @@
 
 const splash = document.querySelector('.splash');
 
-// Add timeout function
+// Add timeout function to splash screen
 
 document.addEventListener('DOMContentLoaded', (e) => {
   setTimeout(() => {
@@ -53,7 +53,7 @@ const formattedObjection = objections.map((item) => {
 
 let count = 0;
 
-// function to randomize out an objection, trigger a window alert
+// function to randomize out an objection, trigger a popup
 // and to reset the counter to 0.
 
 function protest() {
@@ -77,7 +77,7 @@ function moveElmRand(elm) {
 
 // Event listener scroll, trigger a window alert.
 
-window.addEventListener('scroll', (event) => {
+window.addEventListener('scroll', (e) => {
   alert('Yeah, you better scroll away...');
 });
 
@@ -112,10 +112,26 @@ closeButton.addEventListener('click', function (e) {
   popup.style.display = 'none';
 });
 
+// close popup on esc
+
+window.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    popup.style.display = 'none';
+  }
+});
+
 // When the user clicks anywhere outside of the popup, close it
 
 window.addEventListener('click', function (e) {
   if (e.target == popup) {
     popup.style.display = 'none';
   }
+});
+
+// keypress event
+
+document.addEventListener('keypress', (e) => {
+  popup.style.display = 'block';
+  let popupText = (document.getElementById('popup-text').innerHTML =
+    'Yes! You may push your own buttons! 🌻');
 });
