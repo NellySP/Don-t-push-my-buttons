@@ -2,7 +2,7 @@
 
 # Don't push my buttons
 
-Don't push my buttons. Don't touch them. Don't even.
+Don't push my buttons. Don't touch them. Don't even think about it.
 
 # About 
 
@@ -10,7 +10,9 @@ This project is the result of the assignment "The useless web". Visit the site [
 
 # Installation
 
-Add the installation instructions.
+1. Clone this repo and open it with a code-editor.
+2. Open the index.html with live-server.
+3. Remember to not touch my buttons.
 
 # Code Review
 
