@@ -4,7 +4,7 @@
 
 Don't push my buttons. Don't touch them. Don't even think about it.
 
-# About 
+# About
 
 This project is the result of the assignment "The useless web". Visit the site [here](https://dont-push-my-buttons.netlify.app/)!
 
