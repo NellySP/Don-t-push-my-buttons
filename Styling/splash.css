@@ -9,7 +9,7 @@
   z-index: 200;
   text-align: center;
   line-height: 90vh;
-  font-family: 'Go crazy';
+  font-family: var(--angry-text);
   font-size: 15px;
 }
 .splash.display-none {

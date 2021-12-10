@@ -1,6 +1,8 @@
-// Splash screen
+//  fetch Splash screen
 
 const splash = document.querySelector('.splash');
+
+// Add timeout function
 
 document.addEventListener('DOMContentLoaded', (e) => {
   setTimeout(() => {
@@ -73,7 +75,7 @@ function moveElmRand(elm) {
   count++;
 }
 
-// Event listener scroll, trigger at window alert.
+// Event listener scroll, trigger a window alert.
 
 window.addEventListener('scroll', (event) => {
   alert('Yeah, you better scroll away...');
@@ -101,19 +103,16 @@ warning.addEventListener('click', (e) => {
 // Get the popup
 const popup = document.getElementById('myPopup');
 
-// Get the button that opens the modal (replace with function)
-const openBtn = document.getElementById('openBtn');
-
 // Get the <span> element that closes the popup
 const closeButton = document.getElementsByClassName('close')[0];
 
-// When the user clicks on <span> (x), close the popup
+// When the user clicks on (x), close the popup
 
 closeButton.addEventListener('click', function (e) {
   popup.style.display = 'none';
 });
 
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside of the popup, close it
 
 window.addEventListener('click', function (e) {
   if (e.target == popup) {

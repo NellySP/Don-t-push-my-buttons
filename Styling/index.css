@@ -1,7 +1,10 @@
 :root {
+  /* colors */
   --color-1: #9a8c98;
   --color-2: #c9ada7;
   --color-3: #f2e9e4;
+  /* fonts */
+  --angry-text: 'Go crazy';
 }
 
 * {
