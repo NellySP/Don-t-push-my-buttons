@@ -100,7 +100,7 @@ warning.addEventListener('click', (e) => {
   protest();
 });
 
-// Get the popup
+// Fetch the popup
 const popup = document.getElementById('myPopup');
 
 // Get the <span> element that closes the popup
@@ -133,5 +133,5 @@ window.addEventListener('click', function (e) {
 document.addEventListener('keypress', (e) => {
   popup.style.display = 'block';
   let popupText = (document.getElementById('popup-text').innerHTML =
-    'Yes! You may push your own buttons! 🌻');
+    'Yes! Yes, you may push your own buttons! 🌻');
 });
