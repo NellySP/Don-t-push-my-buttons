@@ -27,4 +27,4 @@ This project is the result of the assignment "The useless web". Visit the site [
 Tested by the following people:
 
 1. Linnéa Eriksson
-2. John Doe
+2. Hanna Rosenberg
